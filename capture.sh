@@ -9,7 +9,7 @@ raspistill -w 1000 -h 800 --brightness 57 --saturation 35 --contrast 20 -a 12 -o
 
  width=`identify -format %w SamCam.jpg`; \
   convert -background '#0008' -fill white -gravity center -size ${width}x60 \
-          caption:"Sam Cam : she is $STATUS" \
+          caption:"Camera:  $STATUS" \
           SamCam.jpg +swap -gravity south -composite  SamCam.jpg
 
 echo "success"
